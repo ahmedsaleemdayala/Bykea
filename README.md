@@ -1,5 +1,5 @@
 ## 🔗 Live Demo
-👉 [https:\\poetic-flan-a5931e.netlify.app](https://app.netlify.com/projects/poetic-flan-a5931e/overview)
+👉 https://bykea-page.netlify.app/
 
 🚲 Bykea Landing Page
 
