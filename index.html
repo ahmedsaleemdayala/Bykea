@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS Link-->
+  <link rel="stylesheet" href="style.css">
+  <!--Bootstrap Link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!--Google Font-->
+    <!---Poppins Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!---Roboto Font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+  <title>Bykea: Ride Hailing, Mobility & Delivery </title>
+</head>
+<style>
+  .nav-pills .nav-link {
+    color: #00aa2f;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 8px 22px;
+  }
+
+  .nav-pills .nav-link.active {
+    background-color: #00aa2f;
+    color: #fff;
+  }
+
+  .section-title {
+    color: #00aa2f;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .read-more {
+    color: #00aa2f;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .content-box {
+    padding: 40px;
+  }
+
+  .image-box img {
+    width: 100%;
+    max-width: 420px;
+  }
+</style>
+
+<body>
+  <!--NavBar-->
+  <nav>
+    <div><img src="./assets/Bykea_logo.svg" alt="Bykea logo"></div>
+    <ul class="menu">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Our Sevices</a></li>
+      <li><a href="#">Partner</a></li>
+      <li><a href="#">Franchises</a></li>
+      <li><a href="#">Help Center</a></li>
+      <li><a href="#">Careers</a></li>
+      <button class="ct-bykea">Contact Bykea</button>
+    </ul>
+  </nav>
+  <!--content-1-->
+  <section class="sec-1">
+    <div class="content-1">
+      <h2>Bykea is your everyday, everything platform</h2>
+      <p>From helping you reach anywhere in the city at the lowest rates in town to getting anything delivered to
+        anyone anywhere in the city. Bykea can do it all and more.</p>
+    </div>
+  </section>
+  <!--
+        <div class="content-2">
+            <div class="ride">
+                <h2>Ride</h2>
+                <p>Bykea offers rides on motorbikes, rickshaws, and cars at the lowest fares in Karachi, Lahore and
+                    Islamabad. No matter what your destination is, a Bykea is always there for you. Let’s get moving
+                </p>
+            </div>
+            <div class="ride-img">
+                <img src="./assets/ride.png" alt="ride">
+            </div>
+
+        </div>-->
+
+
+  <!--    <section class="sec-2">
+        <div>
+            <div class="sec-2-image">
+                <img src="./assets/section 2 image.PNG" alt="">
+            </div>
+        </div>
+
+    </section>-->
+
+
+  <div class="container py-5">
+
+    <!-- TABS -->
+    <ul class="nav nav-pills mb-5">
+      <li class="nav-item">
+        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#ride">Ride</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#delivery">Delivery</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#shops">Shops</button>
+      </li>
+    </ul>
+
+    <!-- TAB CONTENT -->
+    <div class="tab-content">
+
+      <!-- RIDE -->
+      <div class="tab-pane fade show active" id="ride">
+        <div class="row align-items-center">
+          <div class="col-md-6 content-box">
+            <h1 class="section-title">Ride</h1>
+            <p>Bykea offers rides on motorbikes, rickshaws, and cars at the lowest fares in Karachi, Lahore and
+              Islamabad. No matter what your destination is, a Bykea is always there for you. Let’s get moving.</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+          <div class="col-md-6 image-box text-center">
+            <img src="./assets/ride.png" alt="Ride">
+          </div>
+        </div>
+      </div>
+
+      <!-- DELIVERY -->
+      <div class="tab-pane fade" id="delivery">
+        <div class="row align-items-center">
+          <div class="col-md-6 content-box">
+            <h1 class="section-title">Delivery</h1>
+            <p>We offer blazing fast parcel delivery services which include cash collection on delivery. With our cash
+              on delivery service, you can save your bank account details with Bykea reaping the benefits of paperless
+              invoices and instant transfers to your bank account upon delivery. A Bykea can deliver up to 20
+              deliveries, so you don’t have to worry about hiring and managing a rider. The best part? The contents are
+              insured so you can have peace of mind when utilizing our delivery services!</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+          <div class="col-md-6 image-box text-center">
+            <img src="./assets/delivery.png" alt="Delivery">
+          </div>
+        </div>
+      </div>
+
+      <!-- SHOPS -->
+      <div class="tab-pane fade" id="shops">
+        <div class="row align-items-center">
+          <div class="col-md-6 content-box">
+            <h1 class="section-title">Shops</h1>
+            <p>You select, we do the rest. Use Shops to explore and discover all retailers, physical or e-tailers, in
+              the cities we operate in. Order from any retailer, and our trusted partner network will get the items
+              delivered to your doorstep in no time. A whole world of shopping is just a tap away!</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+          <div class="col-md-6 image-box text-center">
+            <img src="./assets/shops.png" alt="Shops">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!--Slider-->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/slide-img-1.PNG" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/slide-img-2.PNG" class="d-block w-100" alt="...">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <section class="content-2">
+    
+      <div class="left-side">
+        <img src="./assets/content-2.png" alt="">
+      </div>
+      <div class="right-side">
+        <h2 class="heading">WHY CHOOSE BYKEA</h2>
+        <h2 class="heading-1">We prioritize your safety</h2>
+        <h2 class="head-1">Your ratings and feedback help us ensure that you get the best experience with Bykea every
+          time.</h2>
+        <h2 class="heading-1">Maintain high quality standards</h2>
+        <h2 class="head-1">Your ratings and feedback help us ensure that you get the best experience with Bykea every
+          time.</h2>
+
+        <h2 class="heading-1">Provide transparent pricing</h2>
+        <h2 class="head-1">Our charges have no hidden-costs, we ensure to list down all charges per service used.</h2>
+<div class="store-buttons">
+        <img src="./assets/icon1.jpeg" alt="App Store">
+        <img src="./assets/icon2.jpeg" alt="Google Play">
+        <img src="./assets/icon3.jpeg" alt="App Gallery">
+      </div>
+      </div>
+  </section>
+  <section >
+    <div class="map">
+    <img src="./assets/pak-map.jpg" alt="map">
+</div>
+  </section>
+<div class="container">
+  <div class="row justify-content-center g-4">
+
+    <div class="col-md-6 d-flex">
+      <div class="card w-100 h-100">
+        <img src="./assets/safety.jpg" class="card-img-top" alt="">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Safety</h5>
+          <p class="card-text">
+            All of our partners hold a valid driver’s license, are tracked and undergo a thorough background check to guarantee your safety.
+          </p>
+          <a href="#" class="mt-auto text-success fw-semibold" style="text-decoration: none;">Read More →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 d-flex">
+      <div class="card w-100 h-100">
+        <img src="./assets/accessibility.jpg" class="card-img-top" alt="">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Accessibility</h5>
+          <p class="card-text">
+            We believe in providing accessible means of using the Bykea services. With no need for smartphones or credit cards, the Bykea app limits no-one.
+          </p>
+          <a href="#" class="mt-auto text-success fw-semibold" style="text-decoration: none;">Read More →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<section>
+  <div class="abt-bykea">
+  <h2>About Bykea</h2>
+  <img src="./assets/abt-bykea.jpg" alt="">
+  <p>We are on a journey to build affordable technology solutions that will create income-generating opportunities for tens of thousands in Pakistan, while addressing rampant challenges in the transportation, logistics and payments sectors of the country.</p>
+  <button>Learn about bykea</button>
+  </div>
+
+</section>
+
+<div class="container">
+  <div class="row justify-content-center g-4">
+
+    <div class="col-md-6 d-flex">
+      <div class="card w-100 h-100">
+        <img src="./assets/career.jpg" class="card-img-top" alt="">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Career at Bykea</h5>
+          <p class="card-text">We are always looking to grow our team. Discover the right role for you.</p>
+          <a href="#" class="mt-auto text-success fw-semibold" style="text-decoration: none;">Read More →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 d-flex">
+      <div class="card w-100 h-100">
+        <img src="./assets/partner.jpg" class="card-img-top" alt="">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Partner with Bykea</h5>
+          <p class="card-text">As a Bykea Partner, you are fully in control of your future</p>
+          <a href="#" class="mt-auto text-success fw-semibold" style="text-decoration: none;">Read More →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<section>
+<div class="customer">
+  <h3>Customers share their experiences</h3>
+  <h2>A community full of stories</h2>
+  <img src="./assets/customer.PNG" alt="customer">
+  </div>
+
+</section>
+<footer class="footer">
+  <div class="footer-top">
+
+    <!-- Brand Column -->
+    <div class="footer-col brand">
+      <img src="./assets/Bykea_logo.svg" alt="Bykea" class="logo">
+      <p class="tagline">Moving Pakistan Forward</p>
+
+      <p class="contact">📞 021 38654444</p>
+      <p class="contact">✉️ info@bykea.com</p>
+
+      <div class="app-buttons">
+        <img src="./assets/icon1.jpeg" alt="App Store">
+        <img src="./assets/icon2.jpeg" alt="Google Play">
+        <img src="./assets/icon3.jpeg" alt="App Gallery">
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li>Company</li>
+        <li>Team</li>
+        <li>Mission, Vision & Values</li>
+        <li>Social Impact</li>
+        <li>Press & Media</li>
+        <li>Careers</li>
+        <li>Franchise</li>
+        <li>Security</li>
+      </ul>
+    </div>
+
+    <!-- Products -->
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li>Ride</li>
+        <li>Insurance</li>
+        <li>Shops</li>
+        <li>Delivery</li>
+        <li>Bykea For Business</li>
+      </ul>
+    </div>
+
+    <!-- Partner & Help -->
+    <div class="footer-col">
+      <h4>Bykea Partner</h4>
+      <ul>
+        <li>About Partner</li>
+      </ul>
+
+      <h4 class="mt">Help Center</h4>
+      <ul>
+        <li>FAQs</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>All Rights Reserved Bykea Pakistan</p>
+
+    <div class="footer-links">
+      <span>Privacy Policy</span>
+      <span>Accessibility</span>
+      <span>Safety</span>
+      <span>Terms</span>
+    </div>
+
+    <div class="social">
+      <span><i class="fa-brands fa-facebook"></i></span>
+      <span><i class="fa-brands fa-instagram"></i></span>
+      <span><i class="fa-brands fa-twitter"></i></span>
+      <span><i class="fa-brands fa-linkedin"></i></span>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
