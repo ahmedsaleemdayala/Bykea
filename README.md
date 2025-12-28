@@ -31,14 +31,7 @@ Google Fonts
 
 Media Queries (for responsiveness)
 
-📂 Project Structure
-bykea-landing-page/
-│
-├── index.html
-├── style.css
-├── images/
-│   └── (all images used in the project)
-└── README.md
+
 
 📱 Responsiveness
 
