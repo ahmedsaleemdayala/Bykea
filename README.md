@@ -29,20 +29,15 @@ CSS3
 
 Google Fonts
 
+Java Script
+
 Media Queries (for responsiveness)
 
-📂 Project Structure
-bykea-landing-page/
-│
-├── index.html
-├── style.css
-├── images/
-│   └── (all images used in the project)
-└── README.md
+
 
 📱 Responsiveness
 
-This landing page is fully responsive:
+This Website is fully responsive:
 
 📱 Mobile devices
 

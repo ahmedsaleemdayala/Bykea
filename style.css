@@ -7,7 +7,7 @@
 }
 
 body {
-  
+
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
@@ -45,14 +45,15 @@ nav {
 /* Dropdown Menu */
 .dropdown {
   position: relative;
-
 }
 
+/* Dropdown box */
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+  top: 48px;              /* ⬅️ About ke bilkul neeche */
   left: 0;
-  margin-top: 0;
+  margin: 0;              /* ⬅️ gap remove */
+  padding: 12px 0;
   background: #fff;
   min-width: 240px;
   list-style: none;
@@ -62,18 +63,22 @@ nav {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* Dropdown links */
 .dropdown-menu li a {
   display: block;
-  padding-bottom: 10px;
-  font-weight: bold;
+  padding: 10px 20px;     /* ⬅️ proper spacing */
+  font-weight: 600;
   color: #00aa2f;
+  text-decoration: none;
 }
 
-/* Hover Effect */
+.dropdown-menu li a:hover {
+  background: #f5f5f5;
+}
+
+/* Hover */
 .dropdown:hover .dropdown-menu {
   display: block;
-
-
 }
 
 .ct-bykea {
@@ -88,8 +93,17 @@ nav {
   cursor: pointer;
   margin-top: 0;
 }
-
+.ct-bykea a{
+  color: white;
+  text-decoration: none;
+  background-color: #00aa2fab ;
+}
 .ct-bykea:hover {
+  background-color: white;
+  color: #00aa2f;
+}
+
+.ct-bykea a:hover {
   background-color: white;
   color: #00aa2f;
 }
@@ -551,7 +565,7 @@ nav {
 
 section {
   background: #f7f7f7;
-  padding: 40px 0;
+  padding: 30px 0;
 }
 
 .abtus-3 {
@@ -1034,11 +1048,12 @@ section {
 }
 
 /*team page*/
-.tab-pane h3{
+.tab-pane h3 {
   font-size: 27px;
   font-weight: bold;
 }
-.tab-pane .designation{
+
+.tab-pane .designation {
   color: #02aa31;
   font-size: 24px;
   font-weight: bold;
@@ -1906,20 +1921,23 @@ section {
   z-index: 1;
 }
 
-.safety-content3{
+.safety-content3 {
   width: 1260px;
   margin: 0 auto;
 
 }
-.safety-content3 h2{
+
+.safety-content3 h2 {
   font-size: 37px;
   font-weight: bold;
 }
-.safety-content3 h4{
+
+.safety-content3 h4 {
   font-size: 15px;
   color: #7a7a7a;
 }
-.safety-content3 h3{
+
+.safety-content3 h3 {
   font-size: 15px;
 }
 
@@ -1930,7 +1948,7 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
- 
+
 }
 
 /* ===== Card ===== */
@@ -1941,7 +1959,7 @@ section {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
-  
+
 }
 
 /* ===== Image ===== */
@@ -1966,11 +1984,13 @@ section {
   line-height: 1.7;
   padding: 0 18px 22px;
 }
-.safety-btn{
+
+.safety-btn {
   display: flex;
   justify-content: center;
 }
-.safety-btn button{
+
+.safety-btn button {
   width: 125px;
   height: 50px;
   background-color: rgb(1, 1, 79);
@@ -1983,30 +2003,30 @@ section {
 @media (max-width: 991px) {
 
   /* ===== Safety Hero ===== */
-  .safety{
+  .safety {
     height: auto;
     flex-direction: column;
     padding: 40px 20px;
   }
 
   .safety .left,
-  .safety .right{
+  .safety .right {
     width: 100%;
     margin-left: 0;
     text-align: center;
   }
 
-  .safety .left h2{
+  .safety .left h2 {
     font-size: 30px;
     padding-left: 0;
   }
 
-  .safety .left h3{
+  .safety .left h3 {
     font-size: 18px;
     padding-left: 0;
   }
 
-  .safety .right img{
+  .safety .right img {
     padding-right: 0;
     margin-top: 20px;
   }
@@ -2015,36 +2035,37 @@ section {
   .thankyou,
   .safety-content,
   .safety-content2,
-  .safety-content3{
+  .safety-content3 {
     width: 100%;
     padding: 0 20px;
   }
 
   /* ===== Image with Text ===== */
-  .safety-content2 img{
+  .safety-content2 img {
     height: 400px;
   }
 
-  .safety-content2 h2{
+  .safety-content2 h2 {
     font-size: 26px;
     width: 90%;
   }
 
   /* ===== Cards Grid ===== */
-  .safety-content-3{
+  .safety-content-3 {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     padding: 0 20px;
   }
 }
+
 @media (max-width: 576px) {
 
   /* ===== Hero Text ===== */
-  .safety .left h2{
+  .safety .left h2 {
     font-size: 24px;
   }
 
-  .safety .left h3{
+  .safety .left h3 {
     font-size: 16px;
     line-height: 1.6;
   }
@@ -2052,39 +2073,1102 @@ section {
   /* ===== Headings ===== */
   .thankyou h2,
   .safety-content h2,
-  .safety-content3 h2{
+  .safety-content3 h2 {
     font-size: 26px;
   }
 
-  .thankyou h3{
+  .thankyou h3 {
     font-size: 16px;
   }
 
   /* ===== Image Section ===== */
-  .safety-content2 img{
+  .safety-content2 img {
     height: 300px;
     border-radius: 14px;
   }
 
-  .safety-content2 h2{
+  .safety-content2 h2 {
     font-size: 20px;
     width: 95%;
   }
 
   /* ===== Cards ===== */
-  .safety-content-3{
+  .safety-content-3 {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  .safety-content3-card img{
+  .safety-content3-card img {
     height: 220px;
   }
 
   /* ===== Button ===== */
-  .safety-btn button{
+  .safety-btn button {
     width: 160px;
     height: 48px;
     font-size: 15px;
+  }
+}
+
+/*corporate*/
+.bykea-carpool {
+  width: 1160px;
+  height: 550px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.carpool-left {
+  width: 567px;
+  margin-left: 70px;
+
+}
+
+.carpool-left h2 {
+  font-size: 31px;
+  font-weight: bold;
+}
+
+.carpool-left h3 {
+  font-size: 30px;
+}
+
+.carpool-right {
+  width: 638px;
+  margin-left: 70px;
+}
+
+.corporate-solution {
+  width: 100%;
+  height: 990px;
+  background-color: white;
+
+}
+
+.corporate-solution h2 {
+  text-align: center;
+  font-size: 37px;
+  font-weight: bold;
+}
+
+.corporate-card {
+  width: 1280px;
+  margin: 45px auto 0 auto;
+  /* top 35px, center */
+  padding: 0 10px;
+  /* left right 10px */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* Common card styling */
+.corporate-card>div {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px 20px;
+
+  height: 300px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Images */
+.corporate-card img {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+/* Headings */
+.corporate-card h2 {
+  margin: 10px 0 6px;
+  font-size: 27px;
+  font-weight: 600;
+  color: #0a2540;
+}
+
+.corporate-card h3 {
+  font-size: 19px;
+  font-weight: 400;
+  color: #425466;
+  line-height: 1.6;
+}
+
+.carpool-service a {
+  color: black;
+  cursor: pointer;
+}
+
+.carpool-service h2 {
+  margin-top: 50px;
+}
+
+.carpool-btn {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.carpool-btn button {
+  width: 125px;
+  height: 50px;
+  background-color: rgb(1, 1, 79);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+@media (max-width: 991px) {
+
+  .bykea-carpool {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .carpool-left,
+  .carpool-right {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .carpool-left h2 {
+    font-size: 28px;
+  }
+
+  .carpool-left h3 {
+    font-size: 22px;
+  }
+
+  .carpool-right img {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 30px;
+  }
+
+  .corporate-solution {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .corporate-card {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .corporate-card>div {
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .bykea-carpool {
+    border-radius: 0;
+    padding: 20px 15px;
+  }
+
+  .carpool-left h2 {
+    font-size: 24px;
+  }
+
+  .carpool-left h3 {
+    font-size: 18px;
+  }
+
+  .corporate-solution h2 {
+    font-size: 28px;
+    padding: 0 10px;
+  }
+
+  .corporate-card {
+    gap: 15px;
+  }
+
+  .corporate-card img {
+    width: 55px;
+  }
+
+  .corporate-card h2 {
+    font-size: 22px;
+  }
+
+  .corporate-card h3 {
+    font-size: 16px;
+  }
+
+  .carpool-btn button {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+/*contact us*/
+.pak-landmark {
+  padding: 0;
+}
+
+.pak-landmark img {
+  width: 100%;
+
+  max-height: 450px;
+  object-fit: cover;
+}
+
+.get-touch {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.get-touch h2 {
+  font-size: 37px;
+  font-weight: bold;
+}
+
+.get-touch p {
+  font-size: 20px;
+}
+
+.location {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.location h2 {
+  font-size: 37px;
+  font-weight: bold;
+}
+
+.location p {
+  font-size: 20px;
+}
+
+.location span {
+  font-weight: bold;
+}
+
+@media (max-width: 991px) {
+
+  .pak-landmark img {
+    height: auto;
+    max-height: 360px;
+    object-fit: cover;
+  }
+
+  .get-touch,
+  .location {
+    padding: 0 20px;
+  }
+
+  .get-touch h2,
+  .location h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .get-touch p,
+  .location p {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .pak-landmark img {
+    max-height: 260px;
+  }
+
+  .get-touch h2,
+  .location h2 {
+    font-size: 24px;
+  }
+
+  .get-touch p,
+  .location p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .location span {
+    display: block;
+    margin-top: 5px;
+  }
+}
+
+/*franchise*/
+.journey {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 19px;
+}
+
+.benefit {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.benefit p {
+  font-size: 15px;
+  color: #7a7a7a;
+}
+
+.benefit h2 {
+  font-size: 37px;
+  font-weight: bold;
+}
+
+.benefit-card {
+  max-width: 1160px;
+  width: 100%;
+  margin: 45px auto 0 auto;
+  /* top 35px, center */
+  padding: 0 10px;
+  /* left right 10px */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* Common card styling */
+.benefit-card>div {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px 20px;
+  height: 250px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Images */
+.benefit-card img {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+/* Headings */
+.benefit-card h2 {
+  margin: 10px 0 6px;
+  font-size: 27px;
+  font-weight: 600;
+  color: #0a2540;
+}
+
+.benefit-card h3 {
+  font-size: 19px;
+  font-weight: 400;
+  color: #425466;
+  line-height: 1.6;
+}
+
+.franchise-now {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  line-height: 2;
+}
+
+.franchise-now h2 {
+  font-size: 37px;
+  text-align: center;
+}
+
+.franchise-now p {
+  font-size: 19px;
+  text-align: center;
+}
+
+.franchise-now a {
+  text-decoration: none;
+  color: black;
+}
+
+.franchise-now img {
+  width: 800px;
+  height: 425px;
+  object-fit: contain;
+}
+
+@media (max-width: 991px) {
+
+  .journey,
+  .benefit,
+  .franchise-now {
+    padding: 0 20px;
+  }
+
+  .benefit h2,
+  .franchise-now h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .journey {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .benefit-card {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-card>div {
+    height: auto;
+  }
+
+  .franchise-now {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .franchise-now img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .journey {
+    font-size: 16px;
+  }
+
+  .benefit h2,
+  .franchise-now h2 {
+    font-size: 24px;
+  }
+
+  .benefit p,
+  .franchise-now p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .benefit-card img {
+    width: 55px;
+  }
+
+  .benefit-card h2 {
+    font-size: 22px;
+  }
+
+  .benefit-card h3 {
+    font-size: 16px;
+  }
+
+  .franchise-now img {
+    max-width: 100%;
+  }
+}
+
+
+/*partner*/
+.partner-job {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.partner-job h2 {
+  font-size: 37px;
+  font-weight: bold;
+}
+
+.partner-job p {
+  font-size: 19px;
+}
+
+.partner-story {
+  max-width: 1160px;
+  width: 100%;
+  height: 550px;
+  display: flex;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  align-items: center;
+}
+
+.story-left {
+  width: 50%;
+}
+
+.story-left h2,
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.story-left span {
+  color: #02aa31;
+}
+
+.story-left p {
+  line-height: 1.75;
+  font-size: 19px;
+}
+
+.story-right img {
+  object-fit: contain;
+  height: 450px;
+}
+
+.partner-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 650px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 50px;
+}
+
+.bykea-partner-easy{
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 0;
+}
+.bykea-partner-easy h2{
+  font-size: 37px;
+}
+.bykea-partner-easy p{
+  color: #7a7a7a;
+  font-size: 17px;
+}
+
+/* =========================
+   BYKEA STEPS FIXED SECTION
+========================== */
+.bykea-steps-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+/* LEFT: Steps */
+.steps-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.step {
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step-head {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #e6e6e6;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.step.active .circle {
+  background: #1dbf73;
+  color: #fff;
+}
+
+.step h3 {
+  font-size: 28px;
+  color: #1d2540;
+}
+
+.step p {
+  margin-left: 56px;
+  margin-top: 8px;
+  font-size: 16px;
+  color: #555;
+  max-width: 420px;
+}
+
+/* RIGHT: Image */
+.steps-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+  height: 600px;
+  overflow: hidden;
+  background: #f9f9f9;
+  position: relative;
+  border-radius: 20px;
+}
+
+.steps-right img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .bykea-steps-container {
+    gap: 50px;
+  }
+
+  .step h3 {
+    font-size: 24px;
+  }
+
+  .step p {
+    margin-left: 50px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bykea-steps-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .steps-left {
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .step p {
+    margin-left: 0;
+    text-align: center;
+    max-width: 300px;
+  }
+
+  .steps-right {
+    width: 80%;
+    height: auto;
+  }
+
+  .steps-right img {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .step h3 {
+    font-size: 20px;
+  }
+
+  .step p {
+    font-size: 14px;
+  }
+}
+
+/* SECTION */
+.opportunity {
+  padding: 60px 20px;
+  background-color: #eee;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.small-title {
+  color: #888;
+  font-size: 14px;
+}
+
+.main-title {
+  font-size: 36px;
+  margin: 10px 0 40px;
+  color: #1d2540;
+}
+.future {
+  width: 100%;
+  text-align: center;
+  background-color: #252b48;
+  padding: 0px;
+}
+
+.future h2 {
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+}
+
+.future h3 {
+  font-size: 27px;
+  color: white;
+}
+
+.future button {
+  width: 253px;
+  height: 45px;
+  color: white;
+  background-color: #252b48;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 18px 50px;
+  font-size: 19px;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+
+  .partner-story {
+    flex-direction: column;
+    height: auto;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .story-left,
+  .story-right {
+    width: 100%;
+  }
+
+  .story-left h2,
+  .story-left h3 {
+    font-size: 26px;
+  }
+
+  .story-left p {
+    font-size: 17px;
+  }
+
+  .story-right img {
+    height: 350px;
+    margin-top: 20px;
+  }
+
+  .partner-section {
+    flex-direction: column;
+    height: auto;
+    gap: 25px;
+    padding: 30px;
+  }
+
+  .step-img {
+    width: 260px;
+  }
+
+  .future h2 {
+    font-size: 34px;
+  }
+
+  .future h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .partner-job h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .partner-job p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .partner-story {
+    padding: 20px;
+  }
+
+  .story-left h2,
+  .story-left h3 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .story-left p {
+    font-size: 15px;
+  }
+
+  .story-right img {
+    height: 280px;
+  }
+
+  .partner-section {
+    padding: 20px;
+  }
+
+  .step {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .step-img {
+    width: 220px;
+  }
+
+  .future h2 {
+    font-size: 26px;
+  }
+
+  .future h3 {
+    font-size: 18px;
+  }
+
+  .future button {
+    width: 100%;
+    max-width: 260px;
+    font-size: 16px;
+  }
+}
+
+/*faq*/
+.faq {
+  max-width: 1160px;
+  width: 100%;
+  max-height: 150px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.faq h2 {
+  color: #7a7a7a;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+.faq p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.search-box {
+  position: relative;
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+
+}
+
+.search-box input {
+  width: 95%;
+  padding: 12px 15px 12px 45px;
+  /* left space icon ke liye */
+  font-size: 16px;
+  margin: 0 auto;
+  border: none;
+
+}
+
+.search-box i {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 16px;
+}
+
+.faq-question {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.headline a {
+  text-decoration: none;
+  color: #00aa2f;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 135px;
+  height: 50px;
+  position: relative;
+  text-align: center;
+  padding: 9px 30px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.headline {
+  display: flex;
+  gap: 10px;
+}
+#customer{
+  margin-top: 25px;
+}
+.faq-item{
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  padding: 20px;
+  margin-top: 25px;
+}
+
+.faq-questions{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.faq-answer{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  color: #7a7a7a;
+    font-size: 13px;
+
+}
+
+.faq-item.active .faq-answer{
+  max-height: 500px;
+  margin-top: 10px;
+}
+
+.faq-item.active .icon{
+  transform: rotate(180deg);
+}
+
+@media (max-width: 991px){
+
+  .faq,
+  .faq-question,
+  .search-box{
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .faq p{
+    font-size: 15px;
+  }
+
+  .faq-questions{
+    font-size: 17px;
+  }
+
+  .faq-item{
+    padding: 16px;
+  }
+
+  .headline{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .headline a{
+    width: auto;
+    height: auto;
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .search-box input{
+    width: 100%;
+    padding-left: 40px;
+  }
+}
+@media (max-width: 576px){
+
+  .faq h2{
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .faq p{
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .faq-questions{
+    font-size: 15px;
+    gap: 10px;
+  }
+
+  .faq-item{
+    padding: 14px;
+  }
+
+  .faq-answer{
+    font-size: 12px;
+  }
+
+  .headline{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headline a{
+    width: 100%;
+    text-align: center;
+  }
+
+  .search-box{
+    border-radius: 10px;
+  }
+
+  .search-box input{
+    font-size: 14px;
   }
 }
